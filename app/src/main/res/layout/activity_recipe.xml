@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        tools:context=".Activity">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Name"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:hint="Nom de la recette"
+            android:maxLines="1"
+            android:singleLine="true"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Type"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:hint="Type"
+            android:layout_below="@+id/Name"
+            android:maxLines="1"
+            android:singleLine="true"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Preparation"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:hint="Temps de préparation"
+            android:layout_below="@+id/Type"
+            android:maxLines="1"
+            android:singleLine="true"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Ingredients"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="90dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:hint="Ingrédients"
+            android:layout_below="@+id/Preparation"
+            android:maxLines="2"
+            android:singleLine="true"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="80dp"
+            android:ems="10"
+            android:id="@+id/Recipe_content"
+            android:layout_below="@+id/Name"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/Name"
+            android:layout_alignEnd="@+id/Name"
+            android:layout_alignParentBottom="true"
+            android:hint="Etapes de préparation"
+            android:gravity="top"/>
+    </RelativeLayout>
+
+
+
+
+</android.support.constraint.ConstraintLayout>
